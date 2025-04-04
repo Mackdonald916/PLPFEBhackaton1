@@ -212,6 +212,25 @@
             transform: scale(1.05);
         }
 
+        /* Download CV Button */
+        .download-cv {
+            margin-top: 30px;
+            background-color: #ff7f00;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .download-cv:hover {
+            background-color: #ff6600;
+        }
     </style>
 </head>
 <body>
@@ -225,7 +244,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="education.html"class="active">Education</a></li>
+                    <li><a href="education.html" class="active">Education</a></li>
                     <li><a href="interest.html">Interests</a></li>
                     <li><a href="project.html">Project</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -235,6 +254,8 @@
         <main class="content">
             <!-- Education Title -->
             <div class="education-title">Education</div>
+            <!-- Download CV Button -->
+            <a href="cv/Mackdonald_Shivani_CV.pdf" download class="download-cv">Download CV</a>
             <!-- Education Section -->
             <div class="education-section">
                 <div class="education-box">
@@ -266,6 +287,5 @@
             document.querySelector('.sidebar').classList.toggle('show');
         }
     </script>
-    
 </body>
 </html>

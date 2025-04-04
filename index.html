@@ -80,8 +80,9 @@
             background: linear-gradient(to bottom, #D2B48C, white);
             padding: 40px;
             display: flex;
+            flex-direction: column;
             justify-content: flex-start;
-            align-items: center;
+            align-items: flex-start;
             position: relative;
             overflow: hidden;
             flex-grow: 1; /* Take up remaining space */
@@ -171,6 +172,33 @@
             }
         }
 
+        /* Programming Languages Section */
+        .languages-section {
+            background: white;
+            color: black;
+            padding: 2px;
+            text-align: center;
+            width: 40%;
+            border-top: 0px solid #ccc;
+            margin-top: 0px;
+        }
+
+        .languages-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .languages-section ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.2rem;
+        }
+
+        .languages-section ul li {
+            margin: 10px 0;
+        }
+
         footer {
             background: black;
             color: white;
@@ -186,7 +214,7 @@
             <h2><span>MACKDONALD</span> SHIWANI</h2>
             <nav>
                 <ul>
-                    <li><a href="index.html"class="active">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="education.html">Education</a></li>
                     <li><a href="interest.html">Interests</a></li>
@@ -200,22 +228,35 @@
                 <a href="https://www.linkedin.com/in/mackdonald-shiwani-2b40061b6/"><img src="linkedin.jpeg" alt="LinkedIn"></a>
             </div>
         </aside>
+
         <main class="content">
             <section class="hero">
                 <div class="text">
                     <p>Hi There...</p>
                     <h1>I AM <span class="typing">MACKDONALD SHIWANI</span></h1>
                     <h2>An Engineer & Software Developer</h2>
-                    <p>A passionate Electrical and Electronics Engineering student at Chuka University with a keen interest in Data Science and Software Development. With hands-on experience in electrical systems, programming, and research, Mackdonald continuously strives to innovate and contribute to cutting-edge technologies</p>
-                    <a href="about.html" class="btn">About Me</a>
+                    <p>A passionate Electrical and Electronics Engineering student at Chuka University with a keen interest in Data Science and Software Development. With hands-on experience in electrical systems, programming, and research, Mackdonald continuously strives to innovate and contribute to cutting-edge technologies.</p>
                 </div>
                 <!-- Profile Image directly placed in the right -->
                 <div class="image">
                     <img src="profile.png" alt="Profile Picture">
                 </div>
             </section>
+
+            <!-- Programming Languages Section -->
+            <section class="languages-section">
+                <h2>Programming Languages</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                </ul>
+            </section>
         </main>
     </div>
+
     <footer>
         <p>Created By Mackdonald Shiwani | © 2025 All Rights Reserved</p>
     </footer>
